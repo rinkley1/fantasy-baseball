@@ -2,10 +2,7 @@
 
 # Why are we here
 I do a yearly fantasy baseball league on ESPN with a bud and some people he knows.
-I really wish the app let see managerial stats so I could run tests and maybe see if
-there's any interesting trends. I use "interesting" veeeeery loosely.
-Anyhoo, since ESPN doesn't show these trends, I made a prgoram to at least capture
-one of them.
+I really wish the app would give us a robust look at managerial stats. Since ESPN doesn't show these trends, I made my own prgoram.
 
 # The league
 10 teams, 23 weeks.
@@ -29,11 +26,11 @@ The updated record would be 7-13-0. And running that through the formula, you ha
 When it comes down to it, I wanted to create a line chart that traces
 each team's win percentage week by week.
 I don't know how to do a chart in Python, but I can in Excel.
-So this writes the csv that I can then use in Excel to make a graph. Cool.
+So this writes the csv that I can then use in Excel to make a graph.
 
 ## But classes...
-I'm gonna say this right off the bat (baseball pun): I don't fully understand classes yet.
-I originally wrote this without classes, and honestly I believe it's better without them,
+I'm going to say this right off the bat (baseball pun): I don't fully understand classes in Python yet.
+I originally wrote this without classes — and honestly I believe it's better without them —
 but the practice is worth it. I think.
 
 # The data
@@ -44,12 +41,12 @@ The columns in the CSV are the 22 weeks.
 The rows alternate team and corresponding result. So there are 20 rows.
 
 ## How I sourced:
-I'll loudly say that the way I got the data and CSV file is super inefficient
+I'll loudly announce that the way I got the data and CSV file is super inefficient
 and may not work the same next year when I try this again.
 
 I went to each week's results page, highlighted the necessary results
-(which meant also highlighting a bunch of unneccessary stuff), and then copying
-them to Excel. The formatting was wonky as shiffuh. But at least consistent
+— which meant also highlighting a bunch of unneccessary stuff — and then copied
+them to Excel. The formatting was extremely wonky, but at least consistent
 week by week! That means I could write a single program that goes week by week
 to write my data.
 
